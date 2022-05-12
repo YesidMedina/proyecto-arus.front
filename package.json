@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:css": "postcss styles/tailwind.css -o styles/main.css",
+    "watch:css": "postcss styles/tailwind.css -o styles/main.css"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "eslint": "8.15.0",
